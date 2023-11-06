@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body {
+         background-color: #888888;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+      }
+
+      .loader {
+         width: 100px;
+         height: 100px;
+         border: 4px solid transparent;
+         border-top: 4px solid #3498db;
+         border-radius: 50%;
+         animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+         0% {
+            transform: rotate(0deg);
+            border-top: 4px solid #0de29b;
+         }
+
+         20% {
+            transform: rotate(72deg);
+            border-top: 4px solid transparent;
+         }
+
+         40% {
+            transform: rotate(144deg);
+            border-top: 4px solid #0745ef;
+         }
+
+         60% {
+            transform: rotate(216deg);
+            border-top: 4px solid #0745ef;
+         }
+
+         80% {
+            transform: rotate(288deg);
+            border-top: 4px solid transparent;
+         }
+
+         100% {
+            transform: rotate(360deg);
+            border-top: 4px solid #0de29b;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div class="loader"></div>
+</body>
+
+</html>
